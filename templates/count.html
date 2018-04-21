@@ -1,0 +1,13 @@
+<a href="{%url 'home'%}"> Count Again </a>
+<h1> There are {{len}} words in your text </h1>
+
+<h1> Your Text </h1>
+
+{{fulltext}}
+<br/>
+
+<br/>
+{% for w,c  in wordlist %}
+{{w}} --> {{c}}
+<br/>
+{% endfor %}
